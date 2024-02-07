@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tahaluf</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+        integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR START'S FROM HERE  -->
+    <nav class="px-[48px] py-[16px]">
+        <div class="flex justify-between items-center m-auto">
+            <div>
+                <img src="./assests/images/tahaluf-logo.png" alt="" />
+            </div>
+
+            <div class="hidden lg:block">
+                <ul class="flex gap-4">
+                    <li class="flex items-center gap-[8px]">
+                        <span> Visit </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.99999 2.83752L4.26578 0.700051L6 0.70005L3.86811 4.30005L2.1339 4.30005L2.1339 4.30005L3.86609 4.30005L2.99999 2.83752ZM2.99999 2.83752L1.73421 0.70005L-1.65272e-05 0.70005L2.13187 4.30005L2.1339 4.30005L2.99999 2.83752Z"
+                                fill="#00DEBA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.13377 4.30005L3.86597 4.30005L2.99987 2.83752L2.13377 4.30005Z" fill="#00AE69" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center gap-[8px]">
+                        <span> Exhibit </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.99999 2.83752L4.26578 0.700051L6 0.70005L3.86811 4.30005L2.1339 4.30005L2.1339 4.30005L3.86609 4.30005L2.99999 2.83752ZM2.99999 2.83752L1.73421 0.70005L-1.65272e-05 0.70005L2.13187 4.30005L2.1339 4.30005L2.99999 2.83752Z"
+                                fill="#00DEBA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.13377 4.30005L3.86597 4.30005L2.99987 2.83752L2.13377 4.30005Z" fill="#00AE69" />
+                        </svg>
+                    </li>
+                    <li class="flex items-center gap-[8px]">
+                        <span> Conference </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.99999 2.83752L4.26578 0.700051L6 0.70005L3.86811 4.30005L2.1339 4.30005L2.1339 4.30005L3.86609 4.30005L2.99999 2.83752ZM2.99999 2.83752L1.73421 0.70005L-1.65272e-05 0.70005L2.13187 4.30005L2.1339 4.30005L2.99999 2.83752Z"
+                                fill="#00DEBA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.13377 4.30005L3.86597 4.30005L2.99987 2.83752L2.13377 4.30005Z" fill="#00AE69" />
+                        </svg>
+                    </li>
+
+                    <li class="flex items-center gap-[8px]">
+                        <span> Speakers </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.99999 2.83752L4.26578 0.700051L6 0.70005L3.86811 4.30005L2.1339 4.30005L2.1339 4.30005L3.86609 4.30005L2.99999 2.83752ZM2.99999 2.83752L1.73421 0.70005L-1.65272e-05 0.70005L2.13187 4.30005L2.1339 4.30005L2.99999 2.83752Z"
+                                fill="#00DEBA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.13377 4.30005L3.86597 4.30005L2.99987 2.83752L2.13377 4.30005Z" fill="#00AE69" />
+                        </svg>
+                    </li>
+
+                    <li class="flex items-center gap-[8px]">
+                        <span> Media </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.99999 2.83752L4.26578 0.700051L6 0.70005L3.86811 4.30005L2.1339 4.30005L2.1339 4.30005L3.86609 4.30005L2.99999 2.83752ZM2.99999 2.83752L1.73421 0.70005L-1.65272e-05 0.70005L2.13187 4.30005L2.1339 4.30005L2.99999 2.83752Z"
+                                fill="#00DEBA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.13377 4.30005L3.86597 4.30005L2.99987 2.83752L2.13377 4.30005Z" fill="#00AE69" />
+                        </svg>
+                    </li>
+
+                    <li class="flex items-center gap-[8px]">
+                        <span> Sustainability </span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="6" height="5" viewBox="0 0 6 5" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.99999 2.83752L4.26578 0.700051L6 0.70005L3.86811 4.30005L2.1339 4.30005L2.1339 4.30005L3.86609 4.30005L2.99999 2.83752ZM2.99999 2.83752L1.73421 0.70005L-1.65272e-05 0.70005L2.13187 4.30005L2.1339 4.30005L2.99999 2.83752Z"
+                                fill="#00DEBA" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.13377 4.30005L3.86597 4.30005L2.99987 2.83752L2.13377 4.30005Z" fill="#00AE69" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="hidden lg:block">
+                <div class="flex gap-[40px]">
+                    <div class="flex gap-[4px] items-center">
+                        <div>
+                            <span class="me-4">English</span>
+                        </div>
+                        <div>
+                            <img src="./assests/images/Vector 1.png" alt="" />
+                        </div>
+                    </div>
+                    <button class="bg-black text-white px-[24px] py-[16px]">
+                        Exhibitor Enquiry
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAVBAR END'S HERE  -->
+
+    <!-- HTML -->
+    <!-- <div class="">Hello</div> -->
+    <!-- HEADER START'S HERE  -->
+
+    <header class="lg:flex justify-between gap-[100px]">
+        <div class="order-2 md:order-1 m-4 lg:ms-[100px] mt-[20px] md:mt-[50px] md:mx-[15%]">
+            <div
+                class="md:w-[425px] bg-[url('./assests/images/Green-vector.png')] bg-no-repeat bg-contain leading-[40px] text-[40px] md:text-[56px] md:leading-[50px] lg:leading-[70px]">
+                <h1>The</h1>
+                <h1>New Era of</h1>
+                <h1>Urban Excellence</h1>
+            </div>
+
+            <div class="w-[348px] h-[94px] justify-start items-center gap-6 mt-[32px] inline-flex">
+                <div class="flex flex-col">
+                    <span class="text-indigo-500 text-[20px] md:text-[40px] font-bold leading-10">11-14</span>
+                    <span class="text-zinc-700 text-2xl font-medium">November</span>
+                    <span class="text-zinc-700 text-2xl font-medium leading-normal">2024</span>
+                </div>
+                <div class="flex flex-col gap-[16px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="4" viewBox="0 0 12 4" fill="none">
+                        <path d="M9.71332 -9.99542e-08L0 -5.24537e-07L2.28668 4L12 4L9.71332 -9.99542e-08Z"
+                            fill="black" />
+                    </svg>
+                    <span class="text-zinc-700 text-base font-semibold leading-snug">
+                        Exhibition & Convention Center - Malham - Kingdom of Saudi Arabia
+                    </span>
+                </div>
+            </div>
+
+            <div class="mt-[40px] flex gap-[16px]">
+                <button class="bg-black text-white text-[12px] px-4 py-2 md:px-[24px] md:py-[16px]">
+                    Sponsorship Enquiry
+                </button>
+                <button
+                    class="bg-white text-black border-2 border-[#000000] text-[12px] px-4 py-2 md:px-[24px] md:py-[16px]">
+                    Exhibitor Enquiry
+                </button>
+            </div>
+        </div>
+
+        <div class="order-2 md:order-1">
+            <img src="./assests/images/Header.png" alt="" />
+        </div>
+    </header>
+
+    <!-- HEADER END HERE  -->
+
+    <!-- OUR PARTNER START'S -->
+
+    <div class="my-8">
+        <div class="flex justify-center">
+            <div class="flex items-center gap-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="4" viewBox="0 0 12 4" fill="none">
+                    <path d="M2.28668 -3.11816e-08L10 0L10 4L-3.49691e-07 4L2.28668 -3.11816e-08Z" fill="#6B4DFF" />
+                    <circle cx="10" cy="2" r="2" fill="#6B4DFF" />
+                </svg>
+                <span class="text-black text-base font-semibold uppercase leading-none tracking-wider">Our
+                    Partners</span>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="4" viewBox="0 0 12 4" fill="none">
+                    <path d="M9.71332 6.43138e-07L2 0L2 4L12 4L9.71332 6.43138e-07Z" fill="#6B4DFF" />
+                    <circle cx="2" cy="2" r="2" fill="#6B4DFF" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="swiper-partners">
+            <div class="flex flex-row swiper-wrapper swiper-wrapper-partner">
+                <div class="swiper-slide">
+                    <img src="./assests/images/Rcu - png.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assests/images/NHC الوطنية للإسكان svg.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assests/images/NEOM - png.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assests/images/صندوق التنمية السياحي - png.png" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assests/images/Group 106.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR PARTNER END'S  -->
+
+    <div class="bg-cover md:bg-contain lg:bg-fit bg-no-repeat md:h-[400px] lg:h-[600px]"
+        style="background-image: url('./assests/images/Section-1-bg.png')">
+        <div
+            class="ps-[16px] md:ms-[50px] flex flex-col md:flex-row px-2 md:gap-[400px] lg:px-16 lg:gap-[600px] xl:gap-[770px]">
+            <div
+                class="flex py-4 flex-col text-sm leading-[18px] md:leading-[40px] md:text-[20px] lg:text-[30px] lg:leading-[40px]">
+                <h1 class="text-indigo-500">About</h1>
+                <h1>Cityscape</h1>
+                <h1>Global</h1>
+            </div>
+
+            <div class="lg:flex flex-col gap-8">
+                <div>
+                    <img src="./assests/images/Brand.png" alt="" />
+                </div>
+                <div
+                    class="text-[8px] text-[#292929] font-semibold w-[140px] overflow-hidden md:w-[200px] md:text-[12px] lg:text-[12px] lg:w-[400px]">
+                    <p>
+                        Inspire and be inspired at Cityscape Global, a celebration of
+                        property, community, and the Future of Living.
+                    </p>
+                </div>
+                <div
+                    class="text-[8px] w-[140px] overflow-hidden md:w-[200px] md:text-[12px] lg:text-[12px] lg:w-[400px]">
+                    <p>
+                        Cityscape Global Exhibition is organised by tahaluf. Inspired and
+                        energised by Vision 2030, tahaluf is a newly created strategic
+                        alliance between informa PLC and the Saudi Arabian Federation for
+                        Cyber Security and Programming (SAFCSP).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEALS SECTION  -->
+    <div class="flex flex-col">
+        <div class="flex selector-1">
+            <div
+                class="bg-[url('./assests/images/Purple.png')] bg-no-repeat bg-fit hover:scale-[1.03] transition duration-200 ease-in-out w-[60%] h-32 md:h-40 lg:h-60">
+                <div class="flex flex-col md:gap-8 justify-start text-white px-8 py-8 md:py-8">
+                    <h6 class="text-[16px]">Deals announced</h6>
+                    <h1 class="text-3xl lg:text-[104px]">$30 Billion</h1>
+                </div>
+            </div>
+            <div
+                class="bg-[url('./assests/images/White.png')] bg-no-repeat bg-fit hover:scale-[1.03] transition duration-200 ease-in-out w-[40%] h-32 md:h-40 lg:h-60 flex flex-col justify-start text-black">
+                <div class="flex flex-col md:gap-8 justify-start text-black px-8 py-8 md:py-8">
+                    <h6 class="text-[16px]">Exhibitors</h6>
+                    <h1 class="text-3xl lg:text-[104px]">300+</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex selector-2">
+            <div
+                class="bg-[url('./assests/images/White.png')] bg-no-repeat bg-fit hover:scale-[1.03] transition duration-200 ease-in-out w-[40%] h-32 md:h-40 lg:h-60 flex flex-col flex flex-col justify-start text-black">
+                <div class="flex flex-col md:gap-8 justify-start text-black px-8 py-8 md:py-8">
+                    <h6 class="text-[16px]">Speakers</h6>
+                    <h1 class="text-3xl lg:text-[104px]">380+</h1>
+                </div>
+            </div>
+
+            <div
+                class="bg-[url('./assests/images/Green.png')] bg-no-repeat bg-fit hover:scale-[1.03] transition duration-200 ease-in-out w-[60%] h-32 md:h-40 lg:h-60">
+                <div class="flex flex-col md:gap-8 justify-start text-white px-8 py-8 md:py-8">
+                    <h6 class="text-[16px]">Attendance</h6>
+                    <h1 class="text-3xl lg:text-[104px]">160,000+</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DEALS SECTION  -->
+
+    <div class="">
+        <div class="bg-[#191E23] h-[1300px] md:h-[1700px] lg:h-[900px]">
+            <div>
+                <div class="flex justify-center gap-16 lg:gap-[580px] py-4 lg:p-24">
+                    <div class="text-[8px] md:text-[12px] lg:text-[16px] text-white">
+                        <h5>Why Attend</h5>
+                    </div>
+
+                    <div class="text-white">
+                        <div class="flex gap-2">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                    fill="none">
+                                    <path d="M0 0H8L4 4L0 8V0Z" fill="#00DEBA" />
+                                </svg>
+                            </div>
+                            <div class="text-[8px] md:text-[12px] lg:text-[16px]">
+                                <h5>Step into the Future of Living | Cityscape</h5>
+                                <h5>Global, Riyadh 2023</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative top-[-150px] flex flex-col items-center lg:flex lg:flex-row p-40">
+                <div class="w-60 sm:w-80 lg:h-80">
+                    <img src="./assests/images/Component 40.png" alt="" />
+                </div>
+
+                <div class="w-60 sm:w-80 lg:h-80">
+                    <img src="./assests/images/Component 38.png" alt="" />
+                </div>
+
+                <div class="w-60 sm:w-80 lg:h-80">
+                    <img src="./assests/images/Component 39.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-black ps-6 max-h-full">
+        <div class="bg-white relative lg:pb-[200px]">
+            <!-- MAIN DIV  -->
+            <div class="md:py-[80px] lg:pt-[180px] md:flex flex-row lg:grid lg:grid-cols-2 gap-[52px]">
+                <!-- 1ST COLUM  -->
+                <div class="z-10">
+                    <div class="ms-[20px]">
+                        <div class="mb-[40px] text-[32px]">
+                            <h1><span class="text-indigo-500">Why</span> Exhibit</h1>
+                        </div>
+                        <div class="flex justify items-center gap-[10px] lg:gap-[32px]">
+                            <div>
+                                <img src="./assests/images/Subtract.png" alt="" />
+                            </div>
+                            <div class="">
+                                <div class="flex gap-2">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                            fill="none">
+                                            <path d="M0 0H8L4 4L0 8V0Z" fill="#6B4DFF" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="text-[10px] lg:text-[24px]">
+                                        <h1>Exposure To</h1>
+                                        <h1>
+                                            A <span class="text-indigo-500">Global Audience</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="w-[150px] text-[10px] lg:w-[250px] lg:text-[18px] ms-3 mt-[16px]">
+                                    <p>
+                                        Cityscape Global is the ultimate networking forum to meet
+                                        and hear experts from across the globe discuss topics
+                                        covering every facet of the real estate ecosystem.
+                                    </p>
+
+                                    <div class="mt-4 lg:mt-[24px]">
+                                        <a class="text-[#0D0D33] opacity-40 text-sm font-semibold leading-none"
+                                            href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-[34px] lg:ms-[80px] lg:mt-[320px]">
+                            <div class="flex flex-col gap-[24px]">
+                                <div>
+                                    <img src="./assests/images/Subtract (1).png" alt="" />
+                                </div>
+                                <div class="">
+                                    <div class="flex gap-2">
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                                                viewBox="0 0 8 8" fill="none">
+                                                <path d="M0 0H8L4 4L0 8V0Z" fill="#6B4DFF" />
+                                            </svg>
+                                        </div>
+
+                                        <div class="text-[10px] lg:text-[24px]">
+                                            <h1>
+                                                Generate
+                                                <span class="text-indigo-500">New Leads</span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="text-[10px] w-[300px] lg:text-[20px] lg:w-[400px] ms-3 mt-[16px]">
+                                        <p>
+                                            The event provides a chance to meet and connect with
+                                            other professionals in the real estate industry,
+                                            potentially leading to partnerships, collaborations, and
+                                            new business opportunities. Networking can help you
+                                            build relationships with key decision-makers and
+                                            industry experts, leading to valuable connections and
+                                            insights.
+                                        </p>
+
+                                        <div class="mt-4 lg:mt-[24px]">
+                                            <a class="text-[#0D0D33] opacity-40 text-sm font-semibold leading-none"
+                                                href="">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center mt-8 lg:gap-[5px] lg:mt-[64px] lg:ms-[100px] lg:relative lg:right-[-90px]">
+                            <div>
+                                <img class="lg:h-60" src="./assests/images/Subtract (2).png" alt="" />
+                            </div>
+                            <div class="">
+                                <div class="flex gap-2">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                            fill="none">
+                                            <path d="M0 0H8L4 4L0 8V0Z" fill="#6B4DFF" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="text-[10px] lg:text-[24px]">
+                                        <h1>
+                                            Market <span class="text-indigo-500">Research</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="text-[10px] w-[150px] lg:w-[250px] lg:text-[20px] ms-3 mt-[16px]">
+                                    <p>
+                                        Cityscape Global is the ultimate networking forum to meet
+                                        and hear experts from across the globe discuss topics
+                                        covering every facet of the real estate ecosystem.
+                                    </p>
+
+                                    <div class="mt-[24px]">
+                                        <a class="text-[#0D0D33] opacity-40 text-sm font-semibold leading-none"
+                                            href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 1ST COLUM  -->
+
+                <!-- 2ND COLUM  -->
+                <div class="mt-8 ms-4">
+                    <div>
+                        <div class="flex gap-[24px] mb-[40px]">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                    fill="none">
+                                    <path d="M0 0H8L4 4L0 8V0Z" fill="#6B4DFF" />
+                                </svg>
+                            </div>
+                            <div class="w-[300px] text-[10px] lg:w-[400px] lg:text-[20px]">
+                                <p>
+                                    Cityscape Global is the ultimate networking forum to meet
+                                    and hear experts from across the globe discuss topics
+                                    covering every facet of the real estate ecosystem.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4 mt-4 lg:mt-[40px]">
+                            <div>
+                                <img src="./assests/images/Subtract (3).png" alt="" />
+                            </div>
+                            <div>
+                                <div class="flex gap-2">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                            fill="none">
+                                            <path d="M0 0H8L4 4L0 8V0Z" fill="#6B4DFF" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="text-[10px] lg:text-[24px]">
+                                        <h1>
+                                            Brand <span class="text-indigo-500">building</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="text-[10px] w-[200px] lg:w-[300px] lg:text-[20px] ms-3 mt-[16px]">
+                                    <p>
+                                        Cityscape Global is the ultimate networking forum to meet
+                                        and hear experts from across the globe discuss topics
+                                        covering every facet of the real estate ecosystem.
+                                    </p>
+
+                                    <div class="mt-[24px]">
+                                        <a class="text-[#0D0D33] opacity-40 text-sm font-semibold leading-none"
+                                            href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 lg:mt-[34px] lg:ms-[80px] lg:mt-[320px]">
+                        <div class="flex flex-col gap-[24px]">
+                            <div class="w-60 lg:w-full">
+                                <img src="./assests/images/Subtract (4).png" alt="" />
+                            </div>
+                            <div class="">
+                                <div class="flex gap-2">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                            fill="none">
+                                            <path d="M0 0H8L4 4L0 8V0Z" fill="#6B4DFF" />
+                                        </svg>
+                                    </div>
+
+                                    <div class="text-[10px] lg:text-[24px]">
+                                        <h1>
+                                            Access
+                                            <span class="text-indigo-500">New Markets</span>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="w-[300px] text-[10px] mt-4 lg:w-[400px] lg:text-[20px] ms-3 lg:mt-[16px]">
+                                    <p>
+                                        Cityscape Global attracts attendees from all over the
+                                        world, giving you the opportunity to explore new markets
+                                        and expand your business globally. Access to new markets
+                                        can help you grow your business and reach new customers.
+                                    </p>
+
+                                    <div class="mt-[24px]">
+                                        <a class="text-[#0D0D33] opacity-40 text-sm font-semibold leading-none"
+                                            href="">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2ND COLUM  -->
+                <div
+                    class="absolute top-[1370px] left-[-100px] md:top-[775px] md:left-[-20px] lg:absolute lg:top-[1550px] lg:left-[-70px] xl:top-[1640px]">
+                    <img class="h-[200px] lg:h-full" src="./assests/images/Building.png" alt="" />
+                </div>
+            </div>
+            <!-- MAIN DIV  -->
+        </div>
+    </div>
+
+    <!-- SLIDER # 1  -->
+
+    <div class="w-screen overflow-hidden bg-indigo-600 pb-[100px]">
+        <div class="flex justify-between items-center px-[30px]">
+            <div class="text-white text-[32px]">
+                <h1>Conferences at Cityscape Global 2023</h1>
+            </div>
+
+            <!-- Navigation Buttons  -->
+
+            <div>
+                <div class="flex items-center justify-center gap-4 py-4 md:px-16 md:py-4 md:justify-between">
+                    <div class="swiper-button-prev-swiper-1-left">
+                        <div
+                            class="lg:w-16 flex justify-center items-center border-2 border-[#323339] text-[#323339] hover:border-white hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                            <i class="ri-arrow-left-line"></i>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next-swiper-1-right">
+                        <div
+                            class="lg:w-16 flex justify-center items-center border-2 border-[#323339] text-[#323339] hover:border-white hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                            <i class="ri-arrow-right-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons  -->
+        </div>
+
+        <div class="relative">
+            <div class="swiper-1">
+                <div class="swiper-wrapper flex items-center px-8 lg:px-[90px] pt-8">
+                    <div class="swiper-slide">
+                        <div style="
+                  background-image: url('./assests/images/slide-1-img-1.jpeg');
+                " class="bg-no-repeat bg-cover w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1316px] xl:h-[598px]">
+                            <div class="flex justify-center py-8">
+                                <div id="blur-card"
+                                    class="backdrop-blur-xl fixed bottom-[30px] w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[900px] lg:h-[400px] xl:w-[1316px] xl:h-[598px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div style="
+                  background-image: url('./assests/images/slider-1-img-2.jpeg');
+                " class="bg-no-repeat bg-cover w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1316px] xl:h-[598px]">
+                            <div class="flex justify-center py-8">
+                                <div id="blur-card"
+                                    class="backdrop-blur-xl fixed bottom-[30px] w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[900px] lg:h-[400px] xl:w-[1316px] xl:h-[598px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div style="
+                  background-image: url('./assests/images/slider-1-img-3.jpeg');
+                " class="bg-no-repeat bg-cover w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1316px] xl:h-[598px]">
+                            <div class="flex justify-center py-8">
+                                <div id="blur-card"
+                                    class="backdrop-blur-xl fixed bottom-[30px] w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[900px] lg:h-[400px] xl:w-[1316px] xl:h-[598px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div style="
+                  background-image: url('./assests/images/slider-1-img-4.png');
+                " class="bg-no-repeat bg-cover w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1316px] xl:h-[598px]">
+                            <div class="flex justify-center py-8">
+                                <div id="blur-card"
+                                    class="backdrop-blur-xl fixed bottom-[30px] w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[900px] lg:h-[400px] xl:w-[1316px] xl:h-[598px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div style="
+                  background-image: url('./assests/images/slider-1-img-5.jpeg');
+                " class="bg-no-repeat bg-cover w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1316px] xl:h-[598px]">
+                            <div class="flex justify-center py-8">
+                                <div id="blur-card"
+                                    class="backdrop-blur-xl fixed bottom-[30px] w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[900px] lg:h-[400px] xl:w-[1316px] xl:h-[598px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div style="
+                  background-image: url('./assests/images/slider-1-img-6.jpeg');
+                " class="bg-no-repeat bg-cover w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[1000px] lg:h-[500px] xl:w-[1316px] xl:h-[598px]">
+                            <div class="flex justify-center py-8">
+                                <div id="blur-card"
+                                    class="backdrop-blur-xl fixed bottom-[30px] w-[300px] h-[400px] md:w-[700px] h-[400px] lg:w-[900px] lg:h-[400px] xl:w-[1316px] xl:h-[598px]">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER # 1  -->
+
+    <!-- SLIDER # 2  -->
+
+    <div class="bg-[#191E23] ukiyo-slider-2">
+        <div class="px-[50px] md:px-[160px] py-[50px]">
+            <div class="flex md:flex items-center justify-between">
+                <div class="text-[14px] text-teal-400 font-medium capitalize leading-loose md:text-[32px]">
+                    <h1 class="text-white">
+                        <span class="text-teal-400">Past</span> Speaker
+                    </h1>
+                </div>
+                <div>
+                    <button
+                        class="bg-white text-black border-2 border-[#000000] px-[10px] py-2 text-[10px] md:px-[24px] md:py-[16px]">
+                        Exhibitor Enquiry
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS  -->
+        <div class="swiper swiper-2">
+            <div class="flex gap-0 ms-[70px] swiper-wrapper">
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assests/images/Emily-Davis.png" alt="" />
+                    </div>
+
+                    <div class="py-4 flex justify-start gap-3">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <path opacity="0.2" d="M0 0H8L4 4L0 8V0Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-base font-semibold leading-none">
+                                Emily Davis
+                            </h1>
+
+                            <div class="mt-4">
+                                <h5 class="text-white text-sm font-normal leading-none">
+                                    Architect
+                                </h5>
+                                <span class="text-white text-opacity-40 text-xs font-normal leading-none">Vertex
+                                    Visionaries Architects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assests/images/Sarah-lee.png" alt="" />
+                    </div>
+
+                    <div class="py-4 flex justify-start gap-3">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <path opacity="0.2" d="M0 0H8L4 4L0 8V0Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-base font-semibold leading-none">
+                                Sarah Lee
+                            </h1>
+
+                            <div class="mt-4">
+                                <h5 class="text-white text-sm font-normal leading-none">
+                                    Urban Planner
+                                </h5>
+                                <span class="text-white text-opacity-40 text-xs font-normal leading-none">Vertex Echelon
+                                    Builders & Blueprints</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assests/images/David-Brown.png" alt="" />
+                    </div>
+
+                    <div class="py-4 flex justify-start gap-3">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <path opacity="0.2" d="M0 0H8L4 4L0 8V0Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-base font-semibold leading-none">
+                                David Brown
+                            </h1>
+
+                            <div class="mt-4">
+                                <h5 class="text-white text-sm font-normal leading-none">
+                                    Interior Designer
+                                </h5>
+                                <span class="text-white text-opacity-40 text-xs font-normal leading-none">Vertex
+                                    Quintessentia Acrhitects Co.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assests/images/John-smith.png" alt="" />
+                    </div>
+
+                    <div class="py-4 flex justify-start gap-3">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <path opacity="0.2" d="M0 0H8L4 4L0 8V0Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-base font-semibold leading-none">
+                                John Smith
+                            </h1>
+
+                            <div class="mt-4">
+                                <h5 class="text-white text-sm font-normal leading-none">
+                                    Landscape Architect
+                                </h5>
+                                <span class="text-white text-opacity-40 text-xs font-normal leading-none">Vertex
+                                    Zenithal Innovations Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assests/images/Micheal-John.png" alt="" />
+                    </div>
+
+                    <div class="py-4 flex justify-start gap-3">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <path opacity="0.2" d="M0 0H8L4 4L0 8V0Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-base font-semibold leading-none">
+                                Micheal John
+                            </h1>
+
+                            <div class="mt-4">
+                                <h5 class="text-white text-sm font-normal leading-none">
+                                    Architectural Technologist
+                                </h5>
+                                <span class="text-white text-opacity-40 text-xs font-normal leading-none">Vertex Apex
+                                    Arcadia Architects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div>
+                        <img src="./assests/images/Johny-cash.png" alt="" />
+                    </div>
+
+                    <div class="py-4 flex justify-start gap-3">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
+                                <path opacity="0.2" d="M0 0H8L4 4L0 8V0Z" fill="white" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-base font-semibold leading-none">
+                                Jhony Cash
+                            </h1>
+
+                            <div class="mt-4">
+                                <h5 class="text-white text-sm font-normal leading-none">
+                                    Sustainability Consultant
+                                </h5>
+                                <span class="text-white text-opacity-40 text-xs font-normal leading-none">Vertex
+                                    Pantheon Heights Architects</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS  -->
+
+        <!-- Navigation Buttons  -->
+
+        <div>
+            <div class="flex items-center justify-center gap-4 py-4 md:px-16 md:py-4 md:justify-between">
+                <div class="swiper-button-prev-swiper-2-left">
+                    <div
+                        class="lg:w-16 flex justify-center items-center border-2 border-[#323339] text-[#323339] hover:border-white hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                        <i class="ri-arrow-left-line"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next-swiper-2-right">
+                    <div
+                        class="lg:w-16 flex justify-center items-center border-2 border-[#323339] text-[#323339] hover:border-white hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons  -->
+    </div>
+
+    <!-- SLIDER # 2  -->
+
+    <!-- TESTIMONIAlS  -->
+
+    <div class="overflow-hidden ukiyo-testimonials">
+        <h1
+            class="ms-[16px] md:ms-[32px] text-slate-900 text-[32px] font-medium capitalize leading-loose lg:ms-[180px] lg:mt-[70px]">
+            Testimonials
+        </h1>
+
+        <div class="flex gap-8 px-4 py-4">
+            <div class="swiper-testimonials">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assests/images/Frame 1470.png" alt="" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assests/images/Frame 1472.png" alt="" />
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./assests/images/Frame 1471.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons  -->
+
+        <div>
+            <div class="flex justify-center items-center gap-8 px-16 py-4 lg:justify-between">
+                <div class="swiper-button-prev-swiper-testimonials-left">
+                    <div
+                        class="lg:w-16 flex justify-center items-center border-2 border-[#323339] text-[#323339] hover:border-black hover:text-black ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                        <i class="ri-arrow-left-line"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev-swiper-testimonials-right">
+                    <div
+                        class="lg:w-16 flex justify-center items-center border-2 border-[#323339] text-[#323339] hover:border-black hover:text-black ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons  -->
+    </div>
+
+    <!-- TESTIMONIAlS  -->
+
+    <!-- SLIDER # 3  -->
+
+    <div class="h-80 md:h-96 lg:h-max">
+        <div class="bg-black p-8 bg-no-repeat bg-auto ukiyo-slider-3" style="
+          background-image: url(./assests/images/Rectangle\ 149.png);
+          background-position: right;
+        ">
+            <div class="pt-16">
+                <div class="flex gap-[20px] md:gap-[50px] lg:gap-[200px]">
+                    <div class="flex flex-col gap-[50px] md:gap-[100px] lg:gap-[130px]">
+                        <div class="text-white flex flex-col leading-[20px] lg:text-[25px] lg:leading-[30px]">
+                            <span>Cityscape</span>
+                            <span>Global <span class="text-teal-400">2023</span> </span>
+                            <span class="text-teal-400">eBooks</span>
+                        </div>
+
+                        <!-- Swipper Navigation Button  -->
+                        <div class="">
+                            <div class="flex gap-4">
+                                <div class="swiper-button-prev-unique">
+                                    <div
+                                        class="lg:w-16 flex justify-center items-center bg-white hover:bg-teal-400 ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                                        <i class="ri-arrow-left-line"></i>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-button-next-unique">
+                                    <div
+                                        class="lg:w-16 flex justify-center items-center bg-white hover:bg-teal-400 ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Swipper Navigation Button  -->
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper swiper-3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img class="lg:h-80" src="./assests/images/card-1.png" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="lg:h-80" src="./assests/images/card-2.png" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="lg:h-80" src="./assests/images/card-3.png" alt="" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img class="lg:h-80" src="./assests/images/card-1.png" alt="" />
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!-- <div class="swiper-pagination"></div> -->
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER # 3  -->
+
+    <!-- SLIDER # 4  -->
+
+    <div class="bg-neutral-100 md:py-[30px] md:ps-[30px] md:pe-[30px] ukiyo-slider-4">
+        <div
+            class="flex flex-col sm:flex flex-col md:flex md:justify-center md:items-center flex-col lg:flex lg:flex-row lg:jusify-start lg:items-start lg:py-[110px]">
+            <div class="ms-8 lg:ms-[180px] lg:mt-[30px] lg:flex lg:flex-col lg:gap-[350px]">
+                <div class="w-[280px] text-[20px] py-8 md:w-[500px] md:text-[32px] lg:w-[230px] lg:text-[32px]">
+                    <span>News in And Around</span>
+                    <span class="text-indigo-500">saudi Arbia</span>
+                </div>
+
+                <!-- Navigation Buttons  For Large Screen -->
+
+                <div class="hidden lg:block">
+                    <div class="flex gap-4">
+                        <div class="swiper-button-prev-left">
+                            <div
+                                class="lg:w-16 flex justify-center items-center bg-white hover:bg-black hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                                <i class="ri-arrow-left-line"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next-right">
+                            <div
+                                class="lg:w-16 flex justify-center items-center bg-white hover:bg-black hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Navigation Buttons  For Large Screen  -->
+            </div>
+
+            <!-- CARDS  -->
+
+            <div class="swiper swiper-4">
+                <div class="flex flex-row md:gap-[10px] lg:gap-[24px] swiper-wrapper">
+                    <div class="flex flex-col items-center swiper-slide">
+                        <div class="">
+                            <img src="./assests/images/Family.png" alt="" />
+                        </div>
+
+                        <div class="p-[40px] bg-white">
+                            <div class="w-[300px] leading-[30px]">
+                                <div class="flex md:gap-[150px] lg:gap-[200px]">
+                                    <span>Technology</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                        fill="none">
+                                        <path d="M8 0L8 8L4 4L0 -3.49691e-07L8 0Z" fill="#6B4DFF" />
+                                    </svg>
+                                </div>
+
+                                <div class="mt-2">
+                                    <h1 class="text-black text-[18px] lg:text-[28px] font-light">
+                                        People, not pixels: The true essence of smart cities
+                                    </h1>
+                                </div>
+                                <div>
+                                    <p class="mt-8 text-stone-300 text-sm font-normal leading-tight">
+                                        According to a report by McKinsey Global Institute, smart
+                                        city technologies could potentially contribute to an
+                                        annual economic impact ranging from $1.7 trillion to $2.6
+                                        trillion by 2025.
+                                    </p>
+                                </div>
+                                <div class="mt-8 flex justify-between">
+                                    <span class="text-neutral-400 text-sm font-normal leading-tight">Claire parsons | 5
+                                        Mins Read</span>
+                                    <a href="" class="text-zinc-600 text-sm font-medium leading-tight">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center swiper-slide">
+                        <div>
+                            <img src="./assests/images/Crowd on Crosswalk.png" alt="" />
+                        </div>
+
+                        <div class="p-[40px] bg-white">
+                            <div class="w-[300px] leading-[30px]">
+                                <div class="flex md:gap-[150px] lg:gap-[200px]">
+                                    <span>Technology</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                        fill="none">
+                                        <path d="M8 0L8 8L4 4L0 -3.49691e-07L8 0Z" fill="#6B4DFF" />
+                                    </svg>
+                                </div>
+
+                                <div class="mt-2">
+                                    <h1 class="text-black text-[18px] lg:text-[28px] font-light">
+                                        People, not pixels: The true essence of smart cities
+                                    </h1>
+                                </div>
+                                <div>
+                                    <p class="mt-8 text-stone-300 text-sm font-normal leading-tight">
+                                        According to a report by McKinsey Global Institute, smart
+                                        city technologies could potentially contribute to an
+                                        annual economic impact ranging from $1.7 trillion to $2.6
+                                        trillion by 2025.
+                                    </p>
+                                </div>
+                                <div class="mt-8 flex justify-between">
+                                    <span class="text-neutral-400 text-sm font-normal leading-tight">Claire parsons | 5
+                                        Mins Read</span>
+                                    <a href="" class="text-zinc-600 text-sm font-medium leading-tight">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center swiper-slide">
+                        <div>
+                            <img src="./assests/images/Women Gazing.png" alt="" />
+                        </div>
+
+                        <div class="p-[40px] bg-white">
+                            <div class="w-[300px] leading-[30px]">
+                                <div class="flex md:gap-[150px] lg:gap-[200px]">
+                                    <span>Technology</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
+                                        fill="none">
+                                        <path d="M8 0L8 8L4 4L0 -3.49691e-07L8 0Z" fill="#6B4DFF" />
+                                    </svg>
+                                </div>
+
+                                <div class="mt-2">
+                                    <h1 class="text-black text-[18px] lg:text-[28px] font-light">
+                                        People, not pixels: The true essence of smart cities
+                                    </h1>
+                                </div>
+                                <div>
+                                    <p class="mt-8 text-stone-300 text-sm font-normal leading-tight">
+                                        According to a report by McKinsey Global Institute, smart
+                                        city technologies could potentially contribute to an
+                                        annual economic impact ranging from $1.7 trillion to $2.6
+                                        trillion by 2025.
+                                    </p>
+                                </div>
+                                <div class="mt-8 flex justify-between">
+                                    <span class="text-neutral-400 text-sm font-normal leading-tight">Claire parsons | 5
+                                        Mins Read</span>
+                                    <a href="" class="text-zinc-600 text-sm font-medium leading-tight">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="my-4 flex justify-center items-center lg:hidden">
+            <div class="flex gap-4">
+                <div class="swiper-button-prev-left">
+                    <div
+                        class="lg:w-16 flex justify-center items-center bg-white hover:bg-black hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                        <i class="ri-arrow-left-line"></i>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next-right">
+                    <div
+                        class="lg:w-16 flex justify-center items-center bg-white hover:bg-black hover:text-white ease-in-out duration-300 rounded-full px-3 py-2 lg:px-5 lg:py-5">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SLIDER # 4  -->
+
+    <!-- FOOTER  -->
+
+    <footer>
+        <div class="bg-[#191E23] w-full p-2 lg:flex gap-[100px]">
+            <div class="flex flex-col ps-4">
+                <div class="w-40 md:w-80 md:mt-[90px]">
+                    <img src="./assests/images/Tahaluf-white-logo.png" alt="" />
+                </div>
+
+                <div class="md:mt-[50px]">
+                    <h1 class="text-white">Newsletter</h1>
+                </div>
+
+                <div class="flex gap-0 pt-[20px]">
+                    <input class="py-[13px] ps-[10px] md:ps-[16px] md:pe-16" type="text"
+                        placeholder="Enter email address" />
+                    <button class="text-white bg-indigo-500 px-[27px] py-[8px]">
+                        Confirm
+                    </button>
+                </div>
+
+                <div class="flex items-center gap-[100px] mt-4 md:mt-[100px] md:mx-0">
+                    <div class="w-40">
+                        <span class="text-white text-[12px] md:text-[20px]">Sponsored By</span>
+                        <img class="md:mt-4" src="./assests/images/وزارة الشؤون البلدية والقروية والإسكان - png.png"
+                            alt="" />
+                    </div>
+
+                    <div class="w-40">
+                        <span class="text-white text-[12px] md:text-[20px]">Co Organised By</span>
+                        <img class="md:mt-4" src="./assests/images/Tahaluf svg.png" alt="" />
+                    </div>
+                </div>
+
+                <div class="w-40 mt-8 md:w-[220px] md:mt-[250px]">
+                    <img src="./assests/images/informa-markets-logo-web 1.png" alt="" />
+                </div>
+            </div>
+
+            <div class="mt-8 md:flex flex-col ps-4 gap-[50px] md:mt-[160px]">
+                <div>
+                    <div class="md:flex md:gap-[80px]">
+                        <div class="text-white leading-[40px]">
+                            <h1 class="text-white text-base font-medium mb-4">
+                                Quick Link
+                            </h1>
+                            <ul class="list-none text-zinc-400 text-sm font-normal leading-9">
+                                <li>Download the Cityscape</li>
+                                <li>Download 2024 Sales Brochure</li>
+                                <li>Download Floorplan</li>
+                                <li>Access Customer Center</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-white leading-[40px]">
+                            <h1 class="text-white text-base font-medium mb-4">
+                                Show Dates
+                            </h1>
+                            <ul class="list-none text-zinc-400 text-sm font-normal leading-9">
+                                <li>11-14 November 2024</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div></div>
+                </div>
+
+                <div class="md:flex md:gap-[55px]">
+                    <div>
+                        <div class="text-white leading-[40px]">
+                            <h1 class="text-white text-base font-medium mb-4">
+                                Contact Us
+                            </h1>
+                            <ul class="list-none text-zinc-400 text-sm font-normal leading-9">
+                                <li>Cityscape Global Customer Service</li>
+                                <li class="text-teal-400">
+                                    <a href="">cityscapesaudics@iforma.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <div class="text-white leading-[40px]">
+                                <h1>Follw us</h1>
+                                <ul class="flex gap-[24px] text-zinc-400 text-sm font-normal">
+                                    <li><a href="">X</a></li>
+                                    <li><a href="">In</a></li>
+                                    <li><a href="">Fb</a></li>
+                                    <li><a href="">Yt</a></li>
+                                    <li><a href="">Li</a></li>
+                                    <li><a href="">Sn</a></li>
+                                    <li><a href="">Tk</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white md:py-[16px] ps-[16px] md:flex items-center gap-24">
+            <div class="p-4 text-black text-xs font-normal md:p-0">
+                <span>Copyright © 2023. All rights reserved. Informa Markets, a trading
+                    division of Informa PLC.</span>
+            </div>
+
+            <div class="text-black text-xs font-normal">
+                <ul class="flex flex-wrap p-4 md:flex gap-[24px] md:p-0">
+                    <li>Accessability</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+                    <li>Terms of Use</li>
+                    <li>Visitor Terms And Conditions</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/ukiyojs@4.1.2/dist/ukiyo.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
